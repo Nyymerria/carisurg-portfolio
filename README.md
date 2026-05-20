@@ -58,10 +58,6 @@ After cleaning:
 
 ---
 
-## Files Included
-- Cleaned Jupyter Notebook (.ipynb)
-
----
 
 ## Author
-[Your Name]
+Skye Thomas
