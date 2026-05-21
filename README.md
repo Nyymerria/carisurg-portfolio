@@ -1,62 +1,66 @@
-# carisurg-portfolio
-# Week 0 Assignment - Carisurg MedTech Pathways Program
+Carisurg MedTech Pathways Program — Data Cleaning Project
+Overview
+This repository contains my daily assignments completed for the Carisurg MedTech Pathways Program. The focus is on data cleaning, standardisation, and preparing a clinical dataset for analysis using Python.
+The dataset used contains emergency triage patient records with inconsistent, missing, and invalid entries that required systematic cleaning.
 
-## Overview
-This repository contains my first assignment completed for Week 0 of the Carisurg MedTech Pathways Program. The assignment’s main focus involved basic data cleaning and standardizing the **Gender** column for analysis.
+Dataset
+File used: EmergencyTriageDataset_Reduced_Dirty.csv
+This dataset contains patient triage information including demographic data and vital signs such as blood pressure, temperature, and consciousness scores.
 
-The dataset used contained inconsistencies in how gender values were recorded, which required cleaning before further analysis could be performed.
+Objective
+The main objectives across the project were to:
+Load and explore raw clinical data in Google Colab
+Identify inconsistencies and invalid values
+Standardise categorical variables
+Clean and validate clinical measurements using physiological ranges
+Handle missing data using appropriate imputation methods
+Visualise distributions to understand data behaviour
 
----
+Day 1 — Gender Data Cleaning
+The first task focused on cleaning the Gender column.
+Issues Identified
+Multiple formats for the same values (e.g. Male, MALE, M, m, 1)
+Female values are also inconsistently recorded (e.g. Female, FEMALE, F, f, 0)
+Cleaning Process
+Converted all values to lowercase
+Removed extra whitespace
+Mapped values into binary format:
+Male → 1
+Female → 0
+Checked for missing or unmapped values (NaN)
+Outcome
+The Gender column was successfully standardised into a consistent binary format suitable for analysis.
 
-## Objective
-The main objective of this task was to:
-- Load and explore a raw dataset in Google Colab
-- Identify inconsistencies in the Gender column
-- Clean and standardize the Gender values for analysis
+Day 2 — Vital Signs Cleaning (DBP)
+The second task focused on cleaning the DBP (Diastolic Blood Pressure) column as part of vital sign preprocessing.
+General Approach
+The DBP variable was processed using a structured data cleaning workflow:
+Data inspection using unique() and describe()
+Conversion to numeric using pd.to_numeric(errors='coerce')
+Identification of invalid values based on clinical range
+Replacement of out-of-range values with NaN
+Visualisation using histogram (with KDE) and box plot
+Imputation of missing values using median
+Clinical Cleaning Logic
+DBP: validated using physiological blood pressure range limits to ensure realistic patient values
+Why Median Was Used
+Median imputation was selected because clinical measurements such as DBP may still contain skewed distributions and residual outliers even after cleaning. The median provides a more robust measure of central tendency compared to the mean.
+Outcome
+The DBP column was successfully cleaned, standardised, and prepared for further clinical analysis.
 
----
+Summary of Work Completed
+Across both days, the dataset was progressively cleaned and standardised. Key achievements include:
+Standardisation of categorical variables (Gender)
+Cleaning and validation of multiple vital sign columns
+Removal of invalid and physiologically impossible values
+Application of statistical imputation techniques
+Use of visualisation (histograms, KDE, box plots) to understand distributions
+Preparation of a structured and analysis-ready clinical dataset
 
-## Dataset
-The dataset used was:
-- EmergencyTriageDataset_Reduced_Dirty.csv
 
-It contains emergency triage patient data with several inconsistent and messy entries.
+Conclusion
+This project demonstrates a structured approach to clinical data cleaning, combining statistical methods with domain knowledge. The dataset is now significantly more reliable and suitable for further analysis or machine learning applications.
 
----
-
-## Data Cleaning Process
-
-### Gender Column Standardization
-The Gender column contained multiple formats of the same values, including:
-- Male, MALE, M, m, 1
-- Female, FEMALE, F, f, 0
-
-To clean this column:
-- All values were converted to lowercase
-- Extra whitespace was removed
-- Values were mapped into a binary format:
-  - Male → 1  
-  - Female → 0  
-
-Any values that did not match the mapping were checked for missing data (NaN values).
-
----
-
-## Tools Used
-- Python
-- Pandas
-- NumPy
-- Google Colab
-
----
-
-## Outcome
-After cleaning:
-- The Gender column was successfully standardized
-- Data inconsistencies were resolved
-- The dataset is now prepared for further analysis
-
----
 
 
 ## Author
