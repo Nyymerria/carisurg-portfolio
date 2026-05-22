@@ -112,7 +112,118 @@ The analysis workflow included:
 
 ---
 
-# Figure 1 — Respiratory Rate vs Body Temperature
+
+
+# Figure 1 — FiO₂ Distribution Histogram
+
+## Objective
+
+To analyse oxygen therapy requirements across the emergency department population.
+
+---
+
+## Clinical Background
+
+FiO₂ (Fraction of Inspired Oxygen) reflects the amount of oxygen delivered to patients.
+
+Reference points included:
+- 21% FiO₂ → room air
+- >60% FiO₂ → high-flow oxygen therapy
+
+Higher FiO₂ values may indicate:
+- respiratory failure
+- severe infection
+- critical illness
+- need for advanced respiratory support
+
+---
+
+# Figure 2 — Heart Rate vs Mean Arterial Pressure
+
+## Objective
+
+To explore cardiovascular compensation patterns in patients with reduced perfusion pressure.
+
+---
+
+## Clinical Background
+
+Low MAP may trigger sympathetic nervous system activation, causing an increase in heart rate to maintain circulation.
+
+The figure included:
+- shock threshold line (MAP < 65 mmHg)
+- tachycardia threshold (>100 bpm)
+- bradycardia threshold (<60 bpm)
+
+---
+
+## Clinical Question
+
+> Do patients with low blood pressure (MAP) compensate with a higher heart rate in the ED?
+
+---
+
+# Figure 3 — Systolic Blood Pressure vs Mean Arterial Pressure
+
+## Objective
+
+To investigate the relationship between systolic blood pressure (SBP) and mean arterial pressure (MAP).
+
+---
+
+## Clinical Background
+
+MAP is an important indicator of organ perfusion and circulatory stability.
+
+An expected physiological relationship line was included:
+
+\[
+MAP \approx 0.73 \times SBP
+\]
+
+This visualisation explored whether SBP could potentially act as a simplified estimate of MAP in settings where advanced monitoring may not be available.
+
+---
+
+## Clinical Question
+
+> Does systolic blood pressure predict mean arterial pressure in ED patients?
+
+---
+
+
+
+
+# Figure 4 — Temperature Distribution Histogram
+
+## Objective
+
+To explore the distribution of body temperatures within the emergency department population.
+
+---
+
+## Clinical Zones Included
+
+Shaded clinical regions were added to improve interpretability:
+
+- Hypothermia (<35°C)
+- Normal temperature (35–37.5°C)
+- Fever (37.5–39°C)
+- Hyperpyrexia (>39°C)
+
+---
+
+## Clinical Importance
+
+The histogram helps identify:
+- frequency of febrile presentations
+- severe temperature abnormalities
+- potential infectious disease burden
+- prevalence of critically abnormal temperatures
+
+---
+
+# Figure 5 — Respiratory Rate vs Body Temperature
 
 ## Objective
 
@@ -147,112 +258,6 @@ The scatter plot included:
 ## Clinical Question
 
 > Does increasing body temperature correlate with faster respiratory rates in emergency department patients?
-
----
-
-# Figure 2 — Temperature Distribution Histogram
-
-## Objective
-
-To explore the distribution of body temperatures within the emergency department population.
-
----
-
-## Clinical Zones Included
-
-Shaded clinical regions were added to improve interpretability:
-
-- Hypothermia (<35°C)
-- Normal temperature (35–37.5°C)
-- Fever (37.5–39°C)
-- Hyperpyrexia (>39°C)
-
----
-
-## Clinical Importance
-
-The histogram helps identify:
-- frequency of febrile presentations
-- severe temperature abnormalities
-- potential infectious disease burden
-- prevalence of critically abnormal temperatures
-
----
-
-# Figure 3 — Systolic Blood Pressure vs Mean Arterial Pressure
-
-## Objective
-
-To investigate the relationship between systolic blood pressure (SBP) and mean arterial pressure (MAP).
-
----
-
-## Clinical Background
-
-MAP is an important indicator of organ perfusion and circulatory stability.
-
-An expected physiological relationship line was included:
-
-\[
-MAP \approx 0.73 \times SBP
-\]
-
-This visualisation explored whether SBP could potentially act as a simplified estimate of MAP in settings where advanced monitoring may not be available.
-
----
-
-## Clinical Question
-
-> Can systolic blood pressure reliably estimate mean arterial pressure in emergency department patients?
-
----
-
-# Figure 4 — Heart Rate vs Mean Arterial Pressure
-
-## Objective
-
-To explore cardiovascular compensation patterns in patients with reduced perfusion pressure.
-
----
-
-## Clinical Background
-
-Low MAP may trigger sympathetic nervous system activation, causing an increase in heart rate to maintain circulation.
-
-The figure included:
-- shock threshold line (MAP < 65 mmHg)
-- tachycardia threshold (>100 bpm)
-- bradycardia threshold (<60 bpm)
-
----
-
-## Clinical Question
-
-> Do patients with lower mean arterial pressure demonstrate compensatory tachycardia?
-
----
-
-# Figure 5 — FiO₂ Distribution Histogram
-
-## Objective
-
-To analyse oxygen therapy requirements across the emergency department population.
-
----
-
-## Clinical Background
-
-FiO₂ (Fraction of Inspired Oxygen) reflects the amount of oxygen delivered to patients.
-
-Reference points included:
-- 21% FiO₂ → room air
-- >60% FiO₂ → high-flow oxygen therapy
-
-Higher FiO₂ values may indicate:
-- respiratory failure
-- severe infection
-- critical illness
-- need for advanced respiratory support
 
 ---
 
